@@ -11,7 +11,7 @@
         "churnRate": 4.2,
         "satisfaction": 8.7
     },
-    "performance": {
+    "appPerformance": {
         "responseTime": 245,
         "uptime": 99.8
     },
