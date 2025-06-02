@@ -1,0 +1,31 @@
+{
+    "date": "2025-06-02T00:00:00.000Z",
+    "productMetrics": {
+        "totalSales": 15420,
+        "averagePrice": 89.99,
+        "inventory": 342
+    },
+    "userStats": {
+        "activeUsers": 2847,
+        "premiumUsers": 156,
+        "churnRate": 4.2,
+        "satisfaction": 8.7
+    },
+    "performance": {
+        "responseTime": 245,
+        "uptime": 99.8
+    },
+    "monthlyData": [
+        { "month": 1, "year": 2024, "count": 120 },
+        { "month": 2, "year": 2024, "count": 145 },
+        { "month": 3, "year": 2024, "count": 132 },
+        { "month": 4, "year": 2024, "count": 178 },
+        { "month": 5, "year": 2024, "count": 164 }
+    ],
+    "financials": {
+        "revenue": 98750,
+        "expenses": 67200,
+        "profit": 31550,
+        "taxRate": 0.21
+    }
+}
