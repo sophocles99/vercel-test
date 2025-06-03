@@ -1,9 +1,10 @@
-import { listBlobs } from "@/app/lib/list-blobs";
+import { listBlobs } from "@/app/lib/storage/list-blobs";
 import { NextResponse } from "next/server";
 
 export const GET = async () => {
     const blobs = await listBlobs();
-    blobs.sort((a, b) => b.pathname.localeCompare(a.pathname));
-    
+    console.log({ blobs });
+    const blobsSorted = [...blobs.sort((a, b) => b.pathname.localeCompare(a.pathname))];
+    console.log({ blobsSorted });
     return NextResponse.json(blobs);
 };

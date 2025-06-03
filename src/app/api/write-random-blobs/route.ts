@@ -1,7 +1,7 @@
+import { makeRandomDate } from "@/app/api/write-random-blobs/make-random-date";
 import dummyData from "@/app/lib/dummyData.json";
-import { makeFilename } from "@/app/lib/make-filename";
-import { makeRandomDate } from "@/app/lib/make-random-date";
-import { writeFileBlob } from "@/app/lib/write-file-blob";
+import { getFilenameFromDate } from "@/app/lib/storage/get-filename-from-date";
+import { writeFileBlob } from "@/app/lib/storage/write-file-blob";
 import { NextResponse } from "next/server";
 
 export const GET = async () => {
@@ -13,7 +13,7 @@ export const GET = async () => {
         const data = { ...dummyData };
         data.date = randomDateString;
 
-        const filename = makeFilename(randomDate);
+        const filename = getFilenameFromDate(randomDate);
         const blob = await writeFileBlob(data, filename);
         blobs.push(blob);
     }

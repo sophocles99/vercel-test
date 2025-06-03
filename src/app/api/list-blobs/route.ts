@@ -1,4 +1,4 @@
-import { listBlobs } from "@/app/lib/list-blobs";
+import { listBlobs } from "@/app/lib/storage/list-blobs";
 import { NextResponse } from "next/server";
 
 export const GET = async () => {
